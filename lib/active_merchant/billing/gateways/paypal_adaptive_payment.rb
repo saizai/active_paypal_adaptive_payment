@@ -92,7 +92,7 @@ module ActiveMerchant
       end
 
       def debug
-        "Url: #{@url}\n\n Request: #{@xml} \n\n Response: #{@response.json}"
+        {:url => @url, :request => @xml, :response @response.json}
       end
 
       private
